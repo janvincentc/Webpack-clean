@@ -1,0 +1,6 @@
+@function size($value) {
+  $rem: calc($value / 16) + rem;
+  @return $rem;
+}
+
+$bg: rgb(242, 238, 122);
