@@ -1,23 +1,16 @@
-import React from 'react'
-import { sideNavData } from '../data/data'
+import React from "react";
+import { sideNavData } from "../data/data";
 // Styles
-import styles from './sidenav.scss'
+import styles from "./sidenav.scss";
 
 const Sidenav = () => {
-
   return (
     <>
       <div className={styles.sideNavCont}>
-        {sideNavData.map((item, index)=>(
-          <div key={index} className={styles.sideNav}>
-              <div className={styles.sideNavList}>
-                <button>{item}</button>
-              </div>
-          </div>
-          ))}
+        WEWEWE
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Sidenav
+export default Sidenav;
