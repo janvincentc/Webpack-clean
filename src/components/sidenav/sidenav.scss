@@ -1,15 +1,29 @@
-@import "../../styles/global.scss";
-
+@import '../../styles/global.scss';
 
 .sideNavCont {
-  background-image: url("../../asset/resource/8.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: size(700);
-  height: size(400);
-  border: 1px red solid;
+  width: size(375);
+  height: size(811);
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+  border: 1px $bg solid;
+  height: size(455);
+  width: size(130);
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  border: 1px red solid;
+  margin: size(5) 0 0;
+  padding: size(15);
+  background-color: black;
+  color: #fff;
+  font-size: size(20);
+  font-weight: 650;
+  width: auto;
 }

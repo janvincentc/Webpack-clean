@@ -1,4 +1,4 @@
-import Header from './components/header/header'
+import Body from "./components/body/body";
 import React from "react";
 
 // Styles
@@ -10,6 +10,7 @@ const App = () => {
     <>
       <div className={styles.Container}>
         <Sidenav/>
+        <Body/>
       </div>
     </>
   );

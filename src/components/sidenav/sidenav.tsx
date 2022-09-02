@@ -7,7 +7,15 @@ const Sidenav = () => {
   return (
     <>
       <div className={styles.sideNavCont}>
-        WEWEWE
+        <ul className={styles.buttons}>
+          <li>Burgers</li>
+          <li>Drinks</li>
+          <li>Vegetables</li>
+          <li>Chicken</li>
+          <li>Rice</li>
+          <li>Desserts</li>
+          <li>Fish</li>
+        </ul>
       </div>
     </>
   );
