@@ -1,11 +1,15 @@
-@import '../../styles/global.scss';
+@import "../../styles/global.scss";
+
 
 .sideNavCont {
-  height: size(100);
-  width: size(100);
+  background-image: url("../../asset/resource/8.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: size(700);
+  height: size(400);
   border: 1px red solid;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  align-items: left;
+  justify-content: center;
+  margin: 0 auto;
 }

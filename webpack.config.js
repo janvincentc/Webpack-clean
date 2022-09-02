@@ -4,7 +4,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: "./src/index.tsx",
-  devtool: "inline-source-map",
+  devtool: "source-map",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
@@ -25,12 +25,12 @@ module.exports = {
           loader: "esbuild-loader",
           options: {
             loader: "tsx", // Or 'ts' if you don't need tsx
-            target: "es2015",
+            target: "es2022",
           },
         },
       },
       {
-        test: /\.html/i,
+        test: /\.html$/i,
         use: {
           loader: "html-loader",
         },
@@ -42,8 +42,8 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              url: false,
               importLoaders: 2,
+              import: true,
               modules: {
                 mode: "local",
                 localIdentName: "styles__[local]__[hash:base64:5]",
@@ -51,16 +51,17 @@ module.exports = {
               },
             },
           },
+          "postcss-loader",
           "sass-loader",
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(jpg|png|svg|gif)$/i,
         type: "asset/resource",
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: "asset/resource",
+        type: "/asset/resource",
       },
     ],
   },
